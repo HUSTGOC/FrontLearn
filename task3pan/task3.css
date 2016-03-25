@@ -1,0 +1,52 @@
+#all{
+    background-color:#eee;
+    border:thin solid #999;
+    margin:20px 10px 20px 10px;
+    padding:20px;
+    font-family:"黑体";
+}
+#logo{
+    background-color:white;
+    border:solid thin  #999;
+    width=200px;
+    padding=20px;
+    position:absolute;
+    top:40px;
+    left:40px;
+
+}
+span{
+    font-size:medium;
+    font-weight:bold;
+    line-height:60px;
+    margin-right:20px;
+    vertical-align:top;
+}
+#logo img{
+    border:thin #999 solid;
+    margin:20px;
+}
+#teammember{
+    background-color:white;
+    border:solid thin #999;
+    padding:10px;
+    margin:0px;
+    float:right;
+    position:absolute;
+    top:40px;
+    right:40px;
+}
+.picture{
+    border:thin solid #999;
+    margin:10px;
+}
+#main{
+    background-color:white;
+    border:solid thin #999;
+    padding-top:0px;
+    padding-right:10px;
+    padding-left:20px;
+    padding-bottom:10px;
+    margin-left:240px;
+    margin-right:150px;
+}
