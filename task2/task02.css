@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: #DEDEDE;
+    font-family: "Microsoft Yahei";
+}
+
+header,footer{
+     background-color: #333333;
+     height: 80px;
+     text-align: center;
+     line-height: 40px;
+ }
+.logo{
+    width: 120px;
+    /*height: 70px;*/
+    float: left;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+nav{
+    height: 100px;
+    text-align: right;
+    display: inline-block;
+    float: right;
+}
+nav ul{
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 20px ;
+}
+nav ul li {
+    float: left;
+    font-size: 20px;
+    margin-left: 30px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+.a-last{
+    color: #929091;
+}
+article,aside{
+    border: 1px; solid-color: DEDEDE;
+    margin: 20px 30px;
+    box-shadow: 5px 5px 20px #a1a1a1;
+    background-color: #ffffff;
+    padding: 30px 20px;
+}
+h3{
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+span {
+    font-size: 0.5em;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+article h3,.author,.time{
+    color:gray;
+}article p{
+     margin-top: 10px;
+     text-indent: 30px;
+     margin-bottom: 30px;
+     line-height: 150%;
+ }
+ article ul{
+     list-style: none;
+     margin-left: 20px;
+ }
+  figure{
+     border: 1px solid gray;
+      height: 150px;
+      width: 150px;
+      text-align: center;
+      margin-left: 50px;
+      margin-top: 20px;
+      padding: 10px;
+ }
+  figure>img{
+      margin-top: 10px;
+      height: 75%;
+      width: 90%;
+  }
+  ol{
+      margin-left: 45px;
+
+
+  }
+  table{
+      width: 100%;
+      border:2px;
+      border-collapse:collapse;
+      font-size: 1em;
+  }
+  th{
+      text-align: left;
+  }
+  th,td{
+      padding: 5px;
+  }
+  thead{
+      background-color: #343434;
+      color: #ffffff;
+  }
+  tfoot{
+      background-color: gray;
+  }
+  .table_caption{
+      font-size: 1em;
+  }
+  aside{
+      margin: 40px 40px 30px 30px;
+      font-size: 0.8em;
+  }
+  .formgroup{
+      margin: 10px;
+  }
+  .left-label{
+      display: inline-block;
+      text-align: right;
+      width: 30%;
+      margin-right: 10px;
+  }
+  .right-textinput{
+      display: inline-block;
+      vertical-align: text-top;
+  }
+  .tip{
+      color: gray;
+      display: block;
+      margin-top: 5px;
+  }
+  textarea{
+      height: 100px;
+      width: 60%;
+      box-sizing: border-box;
+      vertical-align: text-top;
+  }
+  .submitbtn{
+      width: 100%;
+      background-color: #3355DD;
+      color: #ffffff;
+      height: 40px;
+      border:1px solid #3355DD;
+      border-radius: 10px;
+      font-size: 1.5em;
+      font-family: "Microsoft Yahei";
+  }
+  footer{
+      font-size: 10px;
+      text-align: center;
+      background-color: #000;
+      color: #ffffff;
+      height: 70%;
+  }

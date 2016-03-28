@@ -1,0 +1,79 @@
+/*设置主窗体为block，外边界为8像素*/
+body{
+    display: block;
+    margin: 8px;
+}
+
+/*设置主容器的各种属性，其中zoom为ie浏览器的专有属性，这个属性是用来进行缩放的*/
+.container{
+    background: #eee;
+    border: 1px solid #999;
+    /*设置边界样式*/
+    padding: 20px;
+    /*这个是设置内边距*/
+    zoom: 1;
+    /*其中zoom为ie浏览器的专有属性，这个属性是用来进行缩放的*/
+    min-width: 600px;
+    /*这个是最小的宽度*/
+}
+
+/*设置标签的类型*/
+div{
+    display: block;
+}
+
+/*这个属性的作用是当cotainer下面有新的标签的时候，这个标签不会覆盖下面的标签*/
+.container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*设置左边的元素的相对位置*/
+.left {
+    position: relative;
+    width: 160px;
+    float: left;
+}
+
+
+/*设置标题的属性,这个标题为absolute属性，他是按照对这个容器的一个相对位置决定的*/
+.left h1 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 14px;
+}
+
+/*设置右边的区域的的浮动属性和宽度信息*/
+.right {
+    width: 80px;
+    float: right;
+}
+
+/*设置容器中间的属性，内边界为20个像素点*/
+.content {
+    background-color: #fff;
+    border: 1px solid #999;
+    padding: 20px;
+}
+
+
+/*设置图片的外边界*/
+.right img {
+    margin: 10px 0 10px 0;
+}
+
+/*设置介绍的信息的属性*/
+.introduce {
+    background-color: #fff;
+    border: 1px solid #999;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+
+/*设置中间容器的位置*/
+.middle {
+    margin: 0 150px 0 220px;
+}
