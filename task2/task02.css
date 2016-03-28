@@ -6,13 +6,12 @@ body{
     background: #DEDEDE;
     font-family: "Microsoft Yahei";
 }
-
 header,footer{
-     background-color: #333333;
-     height: 80px;
-     text-align: center;
-     line-height: 40px;
- }
+    background-color: #333333;
+    height: 80px;
+    text-align: center;
+    line-height: 40px;
+}
 .logo{
     width: 120px;
     /*height: 70px;*/
