@@ -1,7 +1,9 @@
 /*设置主窗体为block，外边界为8像素*/
 body{
     display: block;
-    margin: 8px;
+    border: 1px solid #999;
+    padding: 20px;
+    margin: 2px;
 }
 
 /*设置主容器的各种属性，其中zoom为ie浏览器的专有属性，这个属性是用来进行缩放的*/
@@ -40,7 +42,7 @@ div{
 /*设置标题的属性,这个标题为absolute属性，他是按照对这个容器的一个相对位置决定的*/
 .left h1 {
     position: absolute;
-    right: 10px;
+    right: 35px;
     top: 10px;
     font-size: 14px;
 }
