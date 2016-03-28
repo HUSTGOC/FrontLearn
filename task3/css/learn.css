@@ -32,7 +32,7 @@ div{
 /*设置左边的元素的相对位置*/
 .left {
     position: relative;
-    width: 160px;
+    width: 200px;
     float: left;
 }
 
@@ -47,8 +47,10 @@ div{
 
 /*设置右边的区域的的浮动属性和宽度信息*/
 .right {
-    width: 80px;
+    width: 120px;
     float: right;
+padding: 10px 0 10px 0;
+
 }
 
 /*设置容器中间的属性，内边界为20个像素点*/
@@ -58,10 +60,17 @@ div{
     padding: 20px;
 }
 
+.content1 {
+    background-color: #fff;
+    border: 1px solid #999;
+
+}
 
 /*设置图片的外边界*/
 .right img {
-    margin: 10px 0 10px 0;
+    /*margin: 10px 0 10px 0;*/
+
+    padding: 10px 20px 10px 20px;
 }
 
 /*设置介绍的信息的属性*/
@@ -75,5 +84,5 @@ div{
 
 /*设置中间容器的位置*/
 .middle {
-    margin: 0 150px 0 220px;
+    margin: 0 140px 0 260px;
 }
