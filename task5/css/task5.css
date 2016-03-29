@@ -1,0 +1,195 @@
+/*设置整个外围容器为0*/
+*{
+    margin:0;
+    padding:0;
+}
+/*设置整个body容器的吧背景和字体*/
+body{
+    background: #DEDEDE;
+    font-family: "Microsoft Yahei";
+}
+/*设置头部和底部的黑条*/
+header,footer{
+    background-color: #333333;
+    height: 75px;
+    text-align: center;
+    line-height: 40px;
+}
+/*设置logo格式*/
+.logo{
+    width: 120px;
+    float: left;
+    margin-left: 100px;
+    margin-top:10px;
+}
+/*设置列表的样式*/
+nav{
+    height: 50px;
+    text-align: right;
+    display: inline-block;
+    float: right;
+}
+nav ul{
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 20px ;
+}
+nav ul li {
+    float: left;
+    font-size: 15px;
+    margin-left: 30px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+/*设置列表的最后一个元素的颜色*/
+.a-last{
+    color: #929091;
+}
+/*设置文章部分的格式，要求是有一个底部的容器*/
+article,aside{
+    border: 1px; solid-color: DEDEDE;
+    margin: 20px 30px;
+    box-shadow: 5px 5px 20px #a1a1a1;
+    background-color: #ffffff;
+    padding: 30px 20px;
+}
+
+h3{
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+span {
+    font-size: 1em;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+article author{
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    font-size: 10px;
+    color:gray;
+}
+
+article p{
+    margin-top: 10px;
+    text-indent: 30px;
+    margin-bottom: 30px;
+    line-height: 150%;
+}
+
+ol{
+    margin-left: 45px;
+}
+table{
+    width: 100%;
+    border:2px;
+    border-collapse:collapse;
+    font-size: 1em;
+}
+th{
+    text-align: left;
+}
+th,td{
+    padding: 5px;
+}
+thead{
+    background-color: #343434;
+    color: #ffffff;
+}
+tfoot{
+    background-color: gray;
+}
+.table_caption{
+    font-size: 1em;
+}
+aside{
+    margin: 40px 40px 30px 30px;
+    font-size: 0.8em;
+}
+.formgroup{
+    margin: 20px;
+}
+.left-label{
+    display: inline-block;
+    text-align: right;
+    width: 30%;
+    margin-right: 10px;
+}
+.right-textinput{
+    display: inline-block;
+    vertical-align: text-top;
+}
+.tip{
+    color: gray;
+    display: block;
+    margin-top: 5px;
+}
+textarea{
+    height: 100px;
+    width: 60%;
+    box-sizing: border-box;
+    vertical-align: text-top;
+}
+.submitbtn{
+    width: 100%;
+    background-color: #3355DD;
+    color: #ffffff;
+    height: 40px;
+    border:1px solid #3355DD;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-family: "Microsoft Yahei";
+}
+footer{
+    font-size: 10px;
+    text-align: center;
+    background-color: #000;
+    color: #ffffff;
+    height: 70%;
+    overflow:hidden;
+    _zoom:1;
+}
+
+
+div.imgbox{
+    display: block;
+    width: 150px;
+    height: 180px;
+    border: 1px solid #999;
+    padding: 20px;
+    margin: 10px 20px  20px 20px;
+    float: left;
+
+}
+figcaption{
+    text-align:center;
+}
+div.imgbox img{
+    margin-top: 10px;
+}
+
+#overflow{
+    overflow:hidden;
+    _zoom:1;}
+
+container{
+    display: block;
+    /*max-width: 800px;*/
+min-width: 400px;
+    margin-right:420px;}
+main
+{
+    display: block;
+}
+aside{
+    display: block;
+    width: 350px;
+    position: absolute;
+    right:-10px; top:55px;
+}
