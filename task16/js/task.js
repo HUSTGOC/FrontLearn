@@ -56,7 +56,8 @@ function addAqiData() {
  * 渲染aqi-table表格
  */
 function renderAqiList() {
-
+    var city = document.getElementById("aqi-city-input");
+    var kq =  document.getElementById("aqi-value-input");
     //通过上一步的添加操作，我们将数组的元素添加到表格中，顺便添加删除按钮
     //首先清除table表中的所有标签
     var table = document.getElementById("aqi-table");
@@ -94,6 +95,8 @@ function renderAqiList() {
                 var p = i;
                 td3.onclick = function () {
                     delBtnHandle(p);
+                    city.value="";
+                    kq.value = "";
                 }
             })();
 
