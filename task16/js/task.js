@@ -26,22 +26,27 @@ function addAqiData() {
         alert("请您输入城市名称！");
         return;   //终止程序
     }
-    if(kq.value.trim().length==0) {
-        alert("请您输入该城市的空气质量！");
-        return;   //终止程序
-    }
     var reg = /^[\u0391-\uFFE5A-Za-z]+$/ ;
     var rcity = city.value.trim().match(reg);
     if(rcity==null)
     {
         alert("对不起，你输入的城市名称含有非中英文字符！");
+        city.value="";
+        kq.value = "";
         return;   //终止程序
     }
+    if(kq.value.trim().length==0) {
+        alert("请您输入该城市的空气质量！");
+        return;   //终止程序
+    }
+
     var reg1 = /^[-+]?\d*$/;
     var rkq = kq.value.trim().match(reg1);
     if(rkq==null)
     {
         alert("对不起，你输入的城市空气质量不是有效的整数！");
+        city.value="";
+        kq.value = "";
         return;   //终止程序
     }
     aqiData.push([city.value.trim(),kq.value.trim()]);
@@ -62,46 +67,44 @@ function renderAqiList() {
     }
     }
 
-    //对表格进行渲染
-    table.border = "1";
-    var tr = document.createElement("tr");
-    var td1 = document.createElement("td");
-    td1.innerHTML = "城市";
-    var td2 = document.createElement("td");
-    td2.innerHTML = "空气质量";
-    var td3 = document.createElement("td");
-    td3.innerHTML = "操作";
-    tr.appendChild(td1);
-    tr.appendChild(td2);
-    tr.appendChild(td3);
-    table.appendChild(tr);
-
-
-    for(var i=0 ; i<aqiData.length;i++)
-    {
+    if(aqiData.length>0) {
+        //对表格进行渲染
+        table.border = "1";
         var tr = document.createElement("tr");
         var td1 = document.createElement("td");
-        td1.innerHTML = aqiData[i][0];
+        td1.innerHTML = "城市";
         var td2 = document.createElement("td");
-        td2.innerHTML = aqiData[i][1];
-        var td3 = document.createElement("button");
-            (function(){
-                var p = i;
-                td3.onclick = function() {
-                    delBtnHandle(p);
-                }
-            })();
-
-        td3.id = i;
-        td3.innerHTML = "删除";
+        td2.innerHTML = "空气质量";
+        var td3 = document.createElement("td");
+        td3.innerHTML = "操作";
         tr.appendChild(td1);
         tr.appendChild(td2);
         tr.appendChild(td3);
         table.appendChild(tr);
+
+
+        for (var i = 0; i < aqiData.length; i++) {
+            var tr = document.createElement("tr");
+            var td1 = document.createElement("td");
+            td1.innerHTML = aqiData[i][0];
+            var td2 = document.createElement("td");
+            td2.innerHTML = aqiData[i][1];
+            var td3 = document.createElement("button");
+            (function () {
+                var p = i;
+                td3.onclick = function () {
+                    delBtnHandle(p);
+                }
+            })();
+
+            td3.id = i;
+            td3.innerHTML = "删除";
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            tr.appendChild(td3);
+            table.appendChild(tr);
+        }
     }
-    //显示完成后添加监听事件
-    var table = document.getElementById("aqi-table");
-    //alert(table.innerHTML);
 }
 
 /**
