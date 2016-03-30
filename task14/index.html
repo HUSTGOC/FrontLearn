@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+</head>
+<body>
+
+<h3>污染城市列表</h3>
+<ul id="aqi-list">
+
+            <!--<li>第一名：福州（样例），10</li>-->
+              <!--<li>第二名：福州（样例），10</li>-->
+</ul>
+
+<script type="text/javascript">
+
+    var aqiData = [
+        ["北京", 90],
+        ["上海", 50],
+        ["福州", 10],
+        ["广州", 50],
+        ["成都", 90],
+        ["西安", 100]
+    ];
+
+    (function () {
+
+        /*
+         在注释下方编写代码
+         遍历读取aqiData中各个城市的数据
+         将空气质量指数大于60的城市显示到aqi-list的列表中
+         */
+//        我们先要对数组进行排序，采用冒泡排序对二维数组进行从大到小进行排序
+        for (var i=0;i < aqiData.length-1 ; i++)//这个外层循环表示进行比较次数
+        {
+            for(var j=0;j<=aqiData.length-i-2;j++)
+            {
+                //这个时候比较j和j+1的元素的大小，将大的值变到后面去
+                if(aqiData[j][1]<aqiData[j+1][1])
+                {
+                    var tmp = aqiData[j];
+                    aqiData[j] = aqiData[j+1];
+                    aqiData[j+1] = tmp;
+                }
+            }
+        }
+        var ul = document.getElementById("aqi-list");
+        for (var i=0 ; i<aqiData.length ; i++)
+        {
+            var li = document.createElement("li");
+            if(aqiData[i][1]>60)
+            {
+                li.innerHTML = '第'+(i+1)+'名：' + aqiData[i][0] + '  '+ aqiData[i][1];
+                ul.appendChild(li);
+            }
+        }
+    })();
+
+</script>
+</body>
+</html>
