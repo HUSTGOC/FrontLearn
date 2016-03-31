@@ -1,0 +1,140 @@
+body {
+    background-color: #ccc;
+    font-family: "黑体";
+    margin: 0;
+}
+h3,#author{
+    color:grey;
+}
+#author{
+    font-size:smaller;
+}
+header{
+    background-color:#333;
+    height:60px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+header img{
+    float:left;
+    position:absolute;
+    top:0;
+    left:0;
+}
+header ul li{
+    width:100px;
+    font-size:x-small;
+    float:right;
+ }
+header span{
+     color:white;
+ }
+header ul li.selected{
+    color:#ffffff;
+}
+header ul li a:link,header ul li a:visited {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: none;
+}
+#article1,#article2,#article3,#table,#picture,#form{
+    width:63%;
+    background-color:white;
+    border-style: outset;
+    padding:20px;
+    margin:20px;
+}
+
+#article1{
+    margin:80px 20px 20px 20px;
+}
+#picturedetail{
+    text-align:center;
+    padding:20px 20px 20px 20px;
+    margin:20px 40px 20px 20px;
+    border-width:thin;
+    border-style:solid;
+    border-color:grey;
+
+}
+#picture2{
+    display:inline-flex;
+    flex-flow:row wrap;
+}
+#article2 ul {
+    list-style-type: none;
+}
+table{
+    border:thin solid grey ;
+    border-collapse:collapse;
+    text-align:left;
+    width:100%;
+
+}
+th,td{
+    border:thin solid  gray;
+}
+th{
+    background-color:#222222;
+    color:white;
+}
+#numble{
+    background-color:grey;
+}
+#bold {
+    border-left: solid 5px grey;
+    padding-left: 10px;
+}
+#bold h3{
+    color:black;
+}
+form{
+    display:table;
+    width:100%;
+}
+form textarea{
+    width:100%;
+}
+div.tablerow {
+    display: table-row;
+}
+div.tablerow p{
+    display:table-cell;
+    vertical-align:top;
+    padding:7px;
+}
+div.tablerow p:first-child{
+    text-align:right;
+}
+span{
+    font-size:small;
+    color:gray;
+}
+footer{
+    background-color:#333333;
+    height:60px;
+    width:100%;
+    margin:0;
+    padding:0;
+    clear:right;
+}
+footer p{
+    color:white;
+    font-size:small;
+    font-weight:bold;
+    text-align:center;
+    padding:20px 0 0 20px;
+
+}
+aside {
+    width:26%;
+    float: right;
+    background-color:white;
+    border-style: outset;
+    padding:20px;
+    margin:0 20px 20px 20px;
+
+}
